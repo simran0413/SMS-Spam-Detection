@@ -4,27 +4,27 @@ stages:
     cmd: python src/get_data.py
     deps:
     - path: src/get_data.py
-      md5: ee2b7e27f7962edfb661548a33ffe5b5
-      size: 489
+      md5: 543bf37ae6383ba673917caa3f5ab76b
+      size: 568
     outs:
     - path: dataset
-      md5: 98c8e6651ea0eec3c8dc40aa13dc0760.dir
-      size: 518973
+      md5: 5a84bb806c75cbc704c9fb17e1ba8e44.dir
+      size: 604940
       nfiles: 3
   preprocess:
     cmd: python src/text_preprocessing.py
     deps:
     - path: dataset
-      md5: 98c8e6651ea0eec3c8dc40aa13dc0760.dir
-      size: 518973
+      md5: 5a84bb806c75cbc704c9fb17e1ba8e44.dir
+      size: 604940
       nfiles: 3
     - path: src/text_preprocessing.py
       md5: 353f5a9f6787a4e399c070ad29a10cbb
       size: 2678
     outs:
     - path: output/preprocessed_data.joblib
-      md5: 718e815da2f29c20c409f611003ff2fd
-      size: 251361
+      md5: ff8bc50be73926c6144a21df29e8c526
+      size: 374977
     - path: output/preprocessor.joblib
-      md5: b8f9b6442d120c1f9716e6a79267176f
-      size: 160189
+      md5: 48bf8d5f81621cb90510a6ad037b6f5f
+      size: 202864
