@@ -11,3 +11,20 @@ stages:
       md5: 69700dc670a2d86190d82ac79154445a.dir
       size: 433355
       nfiles: 3
+  preprocess:
+    cmd: python src/text_preprocessing.py
+    deps:
+    - path: dataset
+      md5: 69700dc670a2d86190d82ac79154445a.dir
+      size: 433355
+      nfiles: 3
+    - path: src/text_preprocessing.py
+      md5: 353f5a9f6787a4e399c070ad29a10cbb
+      size: 2678
+    outs:
+    - path: output/preprocessed_data.joblib
+      md5: 926d6bc157b144d5f6643ba238f8f1d8
+      size: 126737
+    - path: output/preprocessor.joblib
+      md5: 13479425225b8c9c2d112b9a8f0ca8f3
+      size: 105666
